@@ -29,19 +29,30 @@ echo json_encode($usuarios);
 //$usuario->login("user", "12345");
 //echo $usuario;
 
-//INSERT
-$aluno = new Usuario("aluno","@luno");
+/////////////INSERT/////////////////////////
+//$aluno = new Usuario("aluno","@luno");
 
-$aluno->insert();
-echo $aluno;
-
-//UPDATE
+//$aluno->insert();
+//echo $aluno;
+///////////////////////////////////////
+//////////UPDATE////////////////////
 //$usuario = new Usuario("aluno","@luno");
 
 //$usuario->loadById(7);
 //$usuario->update("professor","1234567");
 
 //echo $usuario;
+//////////////////////////////////////////
+//DELETE
+
+$usuario = new Usuario();
+
+$usuario->loadById(7);
+
+$usuario->delete();
+
+echo $usuario;
+ ?>
 
 
 
